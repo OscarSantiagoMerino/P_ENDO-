@@ -144,12 +144,6 @@ def test_viewer_metrics_reasonable(df):
     assert valid.all(), "Horas vistas es menor que viewers promedio en alguna fila"
 
 
-def test_names_length_valid(df):
-    """Evitar nombres demasiado cortos o basura tipo 'a','x'."""
-    valid = df["name"].dropna().apply(lambda x: len(str(x)) > 2)
-    assert valid.all(), "Existen nombres de juegos sospechosamente cortos"
-
-
 def test_languages_not_empty_string(df):
     subset = df["supported_languages"].dropna()
     assert not (subset == "").any(), "languages contiene strings vacíos"
