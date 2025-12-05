@@ -1,1 +1,2 @@
 *.csv filter=lfs diff=lfs merge=lfs -text
+data/processed/merged_steam_twitch.csv filter=lfs diff=lfs merge=lfs -text
