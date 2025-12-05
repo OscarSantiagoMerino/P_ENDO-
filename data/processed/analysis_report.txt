@@ -1,0 +1,112 @@
+==== ESTADÍSTICAS BÁSICAS ====
+        steam_appid  required_age          Rank        Month           Year  Hours_watched  Hours_streamed  Peak_viewers  Peak_channels     Streamers   Avg_viewers   Avg_channels  Avg_viewer_ratio  fullgame
+count  1.199000e+03   1199.000000   1199.000000  1199.000000    1199.000000   1.199000e+03    1.199000e+03  1.199000e+03    1199.000000  1.199000e+03  1.199000e+03    1199.000000       1199.000000       0.0
+mean   5.490609e+06     30.919933    828.131776    47.255213   14974.824020   1.768523e+07    6.801358e+05  3.011298e+05    3111.832360  8.799224e+04  2.425925e+04     929.410342        400.720726       NaN
+std    1.617448e+07    140.436246   1747.839419   110.718091   34908.641956   8.450648e+07    3.440376e+06  9.361014e+05   14575.784101  3.740121e+05  1.159109e+05    4711.355926        955.161648       NaN
+min    1.600000e+02      0.000000     11.000000     1.000000    2016.000000   9.395400e+04    8.400000e+01  1.222000e+03       3.000000  4.000000e+00  1.260000e+02       0.000000          3.880000       NaN
+25%    7.779050e+05      0.000000    148.000000     7.000000    2020.000000   6.257480e+05    6.959500e+03  3.442650e+04      67.000000  1.408000e+03  8.515000e+02       9.000000         63.540000       NaN
+50%    1.577240e+06      0.000000    218.000000    11.000000    4036.000000   1.532205e+06    3.012500e+04  7.077400e+04     257.000000  5.163000e+03  2.116000e+03      40.000000        151.720000       NaN
+75%    3.706630e+06     14.000000    560.000000    30.000000    8096.000000   6.275496e+06    1.423030e+05  1.928850e+05    1108.000000  2.418800e+04  8.586500e+03     190.500000        356.985000       NaN
+max    3.562247e+08   1890.000000  13341.000000  1266.000000  391914.000000   1.400273e+09    7.923712e+07  1.203028e+07  325226.000000  7.385576e+06  1.918211e+06  108529.000000      21178.340000       NaN
+
+==== CORRELACIÓN SPEARMAN ====
+                  steam_appid  required_age      Rank     Month      Year  Hours_watched  Hours_streamed  Peak_viewers  Peak_channels  Streamers  Avg_viewers  Avg_channels  Avg_viewer_ratio  fullgame
+steam_appid          1.000000      0.146732  0.646885  0.672215  0.827749       0.811102        0.734696      0.705078       0.706573   0.734884     0.811303      0.730263          0.404117       NaN
+required_age         0.146732      1.000000  0.059609  0.061661  0.119047       0.164523        0.158666      0.136129       0.162763   0.151770     0.164357      0.159829         -0.012085       NaN
+Rank                 0.646885      0.059609  1.000000  0.776951  0.852881       0.545514        0.540084      0.603951       0.477166   0.547095     0.545325      0.531891          0.599270       NaN
+Month                0.672215      0.061661  0.776951  1.000000  0.824440       0.700559        0.665186      0.672991       0.625168   0.660056     0.698513      0.656339          0.522259       NaN
+Year                 0.827749      0.119047  0.852881  0.824440  1.000000       0.855063        0.797249      0.784272       0.745501   0.798187     0.855155      0.788884          0.530174       NaN
+Hours_watched        0.811102      0.164523  0.545514  0.700559  0.855063       1.000000        0.903835      0.840318       0.882094   0.889105     0.999882      0.900081          0.365246       NaN
+Hours_streamed       0.734696      0.158666  0.540084  0.665186  0.797249       0.903835        1.000000      0.725171       0.965398   0.968587     0.904004      0.999515          0.085788       NaN
+Peak_viewers         0.705078      0.136129  0.603951  0.672991  0.784272       0.840318        0.725171      1.000000       0.738991   0.772410     0.839934      0.720184          0.517407       NaN
+Peak_channels        0.706573      0.162763  0.477166  0.625168  0.745501       0.882094        0.965398      0.738991       1.000000   0.951382     0.882235      0.965162          0.063140       NaN
+Streamers            0.734884      0.151770  0.547095  0.660056  0.798187       0.889105        0.968587      0.772410       0.951382   1.000000     0.889315      0.967506          0.111814       NaN
+Avg_viewers          0.811303      0.164357  0.545325  0.698513  0.855155       0.999882        0.904004      0.839934       0.882235   0.889315     1.000000      0.900366          0.364836       NaN
+Avg_channels         0.730263      0.159829  0.531891  0.656339  0.788884       0.900081        0.999515      0.720184       0.965162   0.967506     0.900366      1.000000          0.077338       NaN
+Avg_viewer_ratio     0.404117     -0.012085  0.599270  0.522259  0.530174       0.365246        0.085788      0.517407       0.063140   0.111814     0.364836      0.077338          1.000000       NaN
+fullgame                  NaN           NaN       NaN       NaN       NaN            NaN             NaN           NaN            NaN        NaN          NaN           NaN               NaN       NaN
+
+==== TOP 10 JUEGOS MÁS VISTOS ====
+                  Game  Hours_watched  Avg_viewers
+214   dead by daylight     1400273078      1918211
+847               rust     1169678364      1601290
+178     counter-strike      876395705      1198503
+148              chess      850557756      1169128
+726      path of exile      755583485      1033896
+580           lost ark      662177548       923577
+40            among us      659690733       905069
+240          destiny 2      628984478       862090
+300         elden ring      590668921       814383
+1164    world of tanks      523647336       717910
+
+==== RELACIÓN PRECIO ↔ VIEWERS ====
+                         Game  price_numeric  Avg_viewers
+214          dead by daylight          14.99      1918211
+847                      rust         119.99      1601290
+178            counter-strike           8.19      1198503
+148                     chess          73.99      1169128
+40                   among us          14.99       905069
+300                elden ring          59.99       814383
+356  final fantasy xiv online          52.99       510084
+213                      dayz          84.50       480789
+821                     retro          10.89       388683
+54      ark: survival evolved          14.79       351245
+805     red dead redemption 2          59.99       315207
+740              phasmophobia          59.99       303612
+944          street fighter v          44.50       255846
+104              black desert          17.46       233428
+628     monster hunter: world          39.27       217008
+
+==== JUEGOS POR GÉNERO ====
+genre
+{id: 1                                 696
+description: Action}                   664
+{id: 23                                555
+{id: 25                                554
+description: Indie}                    543
+description: Adventure}                531
+{id: 3                                 319
+{id: 28                                312
+description: RPG}                      307
+description: Simulation}               302
+{id: 2                                 241
+description: Strategy}                 233
+{id: 4                                 175
+description: Casual}                   172
+{id: 29                                114
+description: Massively Multiplayer}    111
+{id: 37                                107
+description: Free To Play}             102
+{id: 70                                 72
+description: Early Access}              71
+
+==== JUEGOS MÁS STREAMEADOS ====
+                         Game  Hours_streamed  Streamers
+214          dead by daylight        79237123    7385576
+240                 destiny 2        48324742    4656216
+300                elden ring        25909624    3007189
+356  final fantasy xiv online        25414197    1785925
+847                      rust        20172063    2039683
+783       pubg: battlegrounds        19626372    1914581
+805     red dead redemption 2        17680067    2341270
+54      ark: survival evolved        16028112    1619748
+740              phasmophobia        15681311    3155998
+726             path of exile        15636977     929293
+
+==== EFICIENCIA DE VIEWERS (Avg_viewer_ratio) ====
+                               Game  Avg_viewer_ratio  Avg_viewers  Avg_channels
+148                           chess          21178.34      1169128          9272
+617                metro sim hustle          11341.86          694             0
+33                        always on           7030.45       146712          3312
+1156  who wants to be a millionaire           6069.47         6095             2
+944                street fighter v           5232.29       255846          4463
+726                   path of exile           4725.87      1033896         21359
+1184                       yakuza 0           4705.28        12710           230
+984                        the ball           4590.40          562             0
+847                            rust           4406.73      1601290         27618
+1164                 world of tanks           4047.68       717910         18713
+412                        golf it!           3991.96        15390           101
+437    gwent: the witcher card game           3905.24        86831          1377
+887                  slay the spire           3850.08       110798          1943
+832                        rimworld           3584.09       154607          4040
+694            old school runescape           3565.92       548667         11482

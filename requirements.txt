@@ -1,0 +1,15 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+requests
+praw
+tweepy
+pyyaml
+pytest
+textblob
+vaderSentiment
+unidecode
+scipy
+streamlit

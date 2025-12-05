@@ -1,0 +1,64 @@
+# ---- ENTORNO VIRTUAL ----
+.venv/
+venv/
+ENV/
+env/
+
+# ---- ARCHIVOS PYTHON ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.log
+
+# ---- CACHE & TEMP ----
+*.DS_Store
+*.tmp
+*.temp
+.cache/
+.ipynb_checkpoints/
+*.sqlite3
+
+# ---- CONFIGURACIONES ----
+.vscode/
+.idea/
+*.code-workspace
+
+# ---- STREAMLIT ----
+.streamlit/secrets.toml
+.streamlit/*.json
+
+# ---- SISTEMA OPERATIVO ----
+Thumbs.db
+ehthumbs.db
+
+# ---- ARCHIVOS DE ENTRENAMIENTO / DATOS GRANDES ----
+*.csv
+*.xlsx
+*.json
+*.parquet
+
+# Permitimos archivos grandes en `data/raw/` (se gestionarán con Git LFS)
+!data/raw/
+!data/raw/*.csv
+
+# Opcional: permite solo una carpeta de datos
+# data/
+# !data/README.md
+
+# ---- LIBRERÍAS ----
+*.egg-info/
+dist/
+build/
+
+# ---- GIT ----
+*.orig
+
+# ---- COMPILADOS ----
+*.so
+*.dll
+*.exe
+*.zip
+*.tar.gz
+*.whl

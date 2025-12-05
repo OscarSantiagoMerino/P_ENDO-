@@ -1,0 +1,51 @@
+pipeline:
+  name: steam_twitch_pipeline
+  version: 1.0
+  owner: oscar_merino
+  description: "Pipeline para correlación entre datos de Steam y Twitch."
+
+paths:
+  raw_data: "data/raw/"
+  processed_data: "data/processed/"
+  log_file: "pipeline_execution.log"
+
+files:
+  steam_dataset: "steam_app_data.csv"
+  twitch_dataset: "Twitch_game_data.csv"
+
+steps:
+  ingestion: true
+  transformation: true
+  validation: true
+  analysis: true
+
+columns:
+  steam:
+    - name
+    - genres
+    - price_overview
+    - release_date
+
+  twitch:
+    - Game
+    - Hours_watched
+    - Avg_viewers
+    - Peak_viewers
+
+validations:
+  - check_not_null:
+      columns:
+        - price_overview
+        - Hours_watched
+        - Avg_viewers
+
+  - check_positive:
+      columns:
+        - Hours_watched
+        - Avg_viewers
+
+  - ensure_merge_not_empty: true
+
+analysis:
+  use_spearman: true
+  use_kruskal: true
