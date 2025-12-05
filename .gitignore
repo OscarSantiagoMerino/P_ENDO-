@@ -42,6 +42,7 @@ ehthumbs.db
 # Permitimos archivos grandes en `data/raw/` (se gestionarán con Git LFS)
 !data/raw/
 !data/raw/*.csv
+!data/processed/merged_steam_twitch.csv
 
 # Opcional: permite solo una carpeta de datos
 # data/

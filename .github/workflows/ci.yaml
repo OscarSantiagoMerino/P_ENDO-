@@ -12,10 +12,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4  # ⬆ Última versión
+        uses: actions/checkout@v4
+        with:
+          lfs: true   # 🔥 SIN ESTO EL CSV ES SOLO UN PUNTERO
 
       - name: Set up Python
-        uses: actions/setup-python@v5  # ⬆ Versión nueva
+        uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
@@ -30,12 +32,12 @@ jobs:
           echo "Running tests..."
           pytest -vv --disable-warnings --maxfail=1
 
-      - name: Run pipeline (optional)
+      - name: Run pipeline
         run: |
           python src/orchestrator.py
 
-      - name: Upload processed data (artifact)
-        uses: actions/upload-artifact@v4  # ⬆ Cambiado desde v3
+      - name: Upload processed data
+        uses: actions/upload-artifact@v4
         with:
           name: processed-data
           path: data/processed/
