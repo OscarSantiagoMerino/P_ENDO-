@@ -14,26 +14,6 @@ Los objetivos específicos son:
 
 ---
 
-## 2. Diseño y Arquitectura
-
-El proyecto está organizado como un pipeline modular:
-
-```
-Proyecto_Steam/
-├─ config/
-│  └─ pipeline_config.yaml
-├─ data/
-│  ├─ raw/
-│  └─ processed/
-├─ src/
-│  ├─ data_ingestion.py
-│  ├─ data_transformation.py
-│  ├─ data_validation.py
-│  ├─ analysis.py
-│  └─ orchestrator.py
-├─ tests/
-└─ requirements.txt
-```
 
 Los componentes principales del pipeline son:
 
@@ -69,7 +49,7 @@ Los componentes principales del pipeline son:
 
 ---
 
-## 3. Metodología
+## 2. Metodología
 
 La metodología aplicada fue la siguiente:
 
@@ -85,7 +65,7 @@ La metodología aplicada fue la siguiente:
 
 ---
 
-## 4. Resultados clave
+## 3. Resultados clave
 
 Los resultados se generan automáticamente en `data/processed/`.
 
@@ -99,7 +79,7 @@ Los resultados cambian conforme los datos se actualizan en el pipeline.
 
 ---
 
-## 5. Pruebas automatizadas y logs
+## 4. Pruebas automatizadas y logs
 
 Los tests se ejecutan con:
 
@@ -127,7 +107,7 @@ Estos logs son accesibles tanto en ejecución local como en CI.
 
 ---
 
-## 6. Reflexión sobre principios DataOps aplicados
+## 5. Reflexión sobre principios DataOps aplicados
 
 Se aplicaron los siguientes principios DataOps:
 
@@ -142,7 +122,7 @@ El proyecto asegura que cualquier persona pueda ejecutar el pipeline y obtener l
 
 ---
 
-## 7. Ejecutar el pipeline
+## 6. Ejecutar el pipeline
 
 ```powershell
 python src/orchestrator.py
@@ -156,7 +136,7 @@ Esto generará:
 
 ---
 
-## 8. CI/CD (GitHub Actions)
+## 7. CI/CD (GitHub Actions)
 
 Archivo ubicado en:
 
@@ -173,7 +153,7 @@ Se ejecuta automáticamente para:
 
 ---
 
-## 9. Requisitos
+## 8. Requisitos
 
 - Python 3.10+
 - Paquetes de requirements.txt
@@ -181,6 +161,6 @@ Se ejecuta automáticamente para:
 
 ---
 
-## 10. Contacto
+## 9. Contacto
 
 Proyecto mantenido por **OscarSantiagoMerino**.
